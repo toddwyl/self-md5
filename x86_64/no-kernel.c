@@ -34,13 +34,10 @@ int main(int argc, char *argv[])
 
     char *data = (char *)START;
     unsigned int hash[4] = {(unsigned int)(0x67452301), (unsigned int)(0xEFCDAB89), (unsigned int)(0x98BADCFE), (unsigned int)(0x10325476)};
-    // unsigned int hash[4];
     const short len = 570;
-    // const short new_len = ((((len + 8) / 64) + 1) * 64) - 8;
     const short new_len = ((((len + 8) / 64) + 1) * 64) - 8;
     data[len] = 0x80;
     *(unsigned long long *)(data + new_len) = len << 3;
-    const short off = new_len - (new_len % BLOCK_LEN);
 
     for (short j = 0; j < new_len; j += BLOCK_LEN)
     {
