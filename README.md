@@ -17,7 +17,7 @@ sh build_elf.sh
 cd arm64  
 sh build_elf_arm.sh  
 ```
-### 
+### mips64
 ```bash
 cd mips64
 sh build_elf_mips.sh
