@@ -6,6 +6,24 @@
 
 https://github.com/ManWingloeng/self-md5
 
+## Usage
+### x86_64
+```bash
+cd x86_64  
+sh build_elf.sh
+```
+### arm64
+```bash
+cd arm64  
+sh build_elf_arm.sh  
+```
+### 
+```bash
+cd mips64
+sh build_elf_mips.sh
+```
+
+
 ## 赛题描述
 
 本次的题目非常简单，它“**几乎**”就是一个Hello World! 没错，你只需要简单的打印自身的MD5就可以了，如果你的输出和md5sum的计算结果一致，那么就可以正确通过评测。
